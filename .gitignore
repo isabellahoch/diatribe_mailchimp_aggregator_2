@@ -1,2 +1,3 @@
-flask/credentials.*
+flask/credentials.py
+flask/__pycache__
 .DS_Store
