@@ -1,0 +1,19 @@
+body {
+font-family: 'Roboto', sans-serif;
+  font-size: 14pt;
+}
+
+h1 {
+  font-size: 24pt;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18pt;
+  font-family: 'Overlock SC', cursive;
+  text-align: center;
+}
+
+#description {
+  font-style: italic;
+}
