@@ -2,11 +2,14 @@
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Spinnaker" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
 <link rel="shortcut icon" href="https://diatribe.org/sites/all/themes/diatribe/favicon.ico">
+<title>{% block title %}</title>
 <title>diaTribe MailChimp Aggregator</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <nav>
+  <h1>{% block header %}</h1>
   <h1>diaTribe MailChimp Aggregator</h1>
   <p>See these metrics in spreadsheet format <a href="https://goo.gl/K6g6fr">here</a>.</p>
   <ul>
