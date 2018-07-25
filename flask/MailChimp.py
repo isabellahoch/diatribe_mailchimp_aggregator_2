@@ -74,30 +74,72 @@ class MailChimpCampaign:
 		type_1_img_src = "http://diatribe.org/sites/default/files/styles/diabetes_icon_articles/public/type-1.png"
 		type_2_img_src = "http://diatribe.org/sites/default/files/styles/diabetes_icon_articles/public/type-2.png"
 		type_1_2_img_src = "http://diatribe.org/sites/default/files/styles/diabetes_icon_articles/public/type-1-2.png"
-		"""
-		email_html = [variate["html"]content["variate_contents"][0]["html"]]
-		"""
 
 		if not content:
 			return False
 		all_links = {"t1":list(), "t2":list(), "t1t2":list()}
-		for variate in content["variate_contents"]:
-			html = variate["html"]
 
-			print("\n\n\n\n")
-			print(html)
-			print("\n\n\n\n")
+		# Get all links next to the desired image references
+		if "variate_contents" not in content:
+			html = content["html"]
+			f = open("../email_html_examples/"+self.id+".html", "w")
+			f.write(html)
+			f.close()
 			tabs = html.split("<table")
 			for table_div in tabs:
-				pass
+				if type_1_img_src in table_div:
+					link = table_div.split("href=\"")[1].split("\"")[0]
+					if link not in all_links["t1"]:
+						all_links["t1"].append(link)
+				if type_2_img_src in table_div:
+					link = table_div.split("href=\"")[1].split("\"")[0]
+					if link not in all_links["t2"]:
+						all_links["t2"].append(link)
+				if type_1_2_img_src in table_div:
+					link = table_div.split("href=\"")[1].split("\"")[0]
+					if link not in all_links["t1t2"]:
+						all_links["t1t2"].append(link)
+		else:
+			for variate in content["variate_contents"]:
+				html = variate["html"]
+				f = open("../email_html_examples/"+self.id+".html", "w")
+				f.write(html)
+				f.close()
+				tabs = html.split("<table")
+				for table_div in tabs:
+					if type_1_img_src in table_div:
+						link = table_div.split("href=\"")[1].split("\"")[0]
+						if link not in all_links["t1"]:
+							all_links["t1"].append(link)
+					if type_2_img_src in table_div:
+						link = table_div.split("href=\"")[1].split("\"")[0]
+						if link not in all_links["t2"]:
+							all_links["t2"].append(link)
+					if type_1_2_img_src in table_div:
+						link = table_div.split("href=\"")[1].split("\"")[0]
+						if link not in all_links["t1t2"]:
+							all_links["t1t2"].append(link)
+
+
+		print("\n\n\n\n")
+		print(content)
+		print("\n\n\n\n")
+		exit()
+
+
+		return all_links
 
 
 
 
 test = MailChimp(mailchimp_api_key, mailchimp_region, mailchimp_user)
 camp_ids = test.get_campaigns(get_all=False, return_ids=True)
-camp = MailChimpCampaign(test, camp_ids[0])
-print(camp.get_email_content_links_by_type())
+
+for camp_id in camp_ids:
+
+	camp = MailChimpCampaign(test, camp_id)
+	print(camp_id)
+	print(camp.get_email_content_links_by_type())
 
 
 
