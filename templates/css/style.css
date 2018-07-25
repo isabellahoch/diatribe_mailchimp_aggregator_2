@@ -2781,3 +2781,13 @@ ul.the-icons {
 }
 
 /* Theme Styler :: End */
+
+/* Isabella's additions */
+
+.status-dot {
+  height: 20px;
+  width: 20px;
+  background-color: #63dd84;
+  border-radius: 50%;
+  display: inline-block;
+}
