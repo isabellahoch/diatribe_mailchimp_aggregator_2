@@ -274,8 +274,12 @@ ul.social-network li a:hover {
 
 /* --- menu --- */
 
-header .navigation {
+/* header .navigation {
   float: right;
+} */
+
+.pull-right {
+  float:right
 }
 
 header ul.nav li {
