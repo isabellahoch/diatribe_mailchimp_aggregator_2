@@ -23,8 +23,7 @@ class MailChimp:
 		if return_ids:
 			return [campaign["id"] for campaign in response.json()["campaigns"]]
 
-		return response.json()["campaigns"]
-
+		return response.json()
 
 	def get_campaign_report(self, campaign_id):
 		request_auth = (self.user, self.api_key)
@@ -34,10 +33,33 @@ class MailChimp:
 			return False
 		return response.json()
 
+	def get_campaign_click_report(self, campaign_id):
+		request_auth = (self.user, self.api_key)
+		request_url = "https://" + self.region + ".api.mailchimp.com/3.0/reports/" + campaign_id + "/click-details"
+		response = requests.get(request_url, auth=request_auth)
+		if response.status_code != 200:
+			return False
+		return response.json()
+
+	def get_campaign_content(self, campaign_id):
+		request_auth = (self.user, self.api_key)
+		request_url = "https://" + self.region + ".api.mailchimp.com/3.0/campaigns/" + campaign_id + "/content"
+		response = requests.get(request_url, auth=request_auth)
+		if response.status_code != 200:
+			return False
+		return response.json()
 
 
 
 
+class MailChimpCampaign:
+
+	def __init__(self, chimp, campaign_id):
+		self.id = campaign_id
+		self.chimp = chimp
+		self.api_key = self.chimp.api_key
+		self.region = self.chimp.region
+		self.user = self.chimp.user
 
 
 
@@ -45,17 +67,24 @@ class MailChimp:
 test = MailChimp(mailchimp_api_key, mailchimp_region, mailchimp_user)
 camp_ids = test.get_campaigns(get_all=False, return_ids=True)
 
-camp_details = test.get_campaign_report(camp_ids[0])
 
 
-for foo in camp_details:
-	print(foo)
+content = test.get_campaign_content(camp_ids[0])
+
+for foo in content["variate_contents"]:
+	for i in foo:
+		print(i)
 
 
-print(camp_details["_links"])
-	
+print(content["variate_contents"][0]["html"])
 
 
+"""
+for camp in camp_ids:
+	urls = test.get_campaign_click_report(camp)["urls_clicked"]
+	for url in urls:
+		print(url["url"] + "  :  " + str(url["total_clicks"]))
+"""
 
 
 
