@@ -5,11 +5,13 @@ font-family: 'Roboto', sans-serif;
 
 h1 {
   font-size: 24pt;
+  text-align: center;
 }
 
 h2 {
   font-size: 18pt;
   font-family: 'Overlock SC', cursive;
+  text-align: center;
 }
 
 #description {
