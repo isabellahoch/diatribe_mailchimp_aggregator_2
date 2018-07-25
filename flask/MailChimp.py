@@ -61,30 +61,46 @@ class MailChimpCampaign:
 		self.region = self.chimp.region
 		self.user = self.chimp.user
 
+	def get_content(self):
+		request_auth = (self.user, self.api_key)
+		request_url = "https://" + self.region + ".api.mailchimp.com/3.0/campaigns/" + self.id + "/content"
+		response = requests.get(request_url, auth=request_auth)
+		if response.status_code != 200:
+			return False
+		return response.json()
+
+	def get_email_content_links_by_type(self):
+		content = self.get_content()
+		type_1_img_src = "http://diatribe.org/sites/default/files/styles/diabetes_icon_articles/public/type-1.png"
+		type_2_img_src = "http://diatribe.org/sites/default/files/styles/diabetes_icon_articles/public/type-2.png"
+		type_1_2_img_src = "http://diatribe.org/sites/default/files/styles/diabetes_icon_articles/public/type-1-2.png"
+		"""
+		email_html = [variate["html"]content["variate_contents"][0]["html"]]
+		"""
+
+		if not content:
+			return False
+		all_links = {"t1":list(), "t2":list(), "t1t2":list()}
+		for variate in content["variate_contents"]:
+			html = variate["html"]
+
+			print("\n\n\n\n")
+			print(html)
+			print("\n\n\n\n")
+			tabs = html.split("<table")
+			for table_div in tabs:
+				pass
+
 
 
 
 test = MailChimp(mailchimp_api_key, mailchimp_region, mailchimp_user)
 camp_ids = test.get_campaigns(get_all=False, return_ids=True)
+camp = MailChimpCampaign(test, camp_ids[0])
+print(camp.get_email_content_links_by_type())
 
 
 
-content = test.get_campaign_content(camp_ids[0])
-
-for foo in content["variate_contents"]:
-	for i in foo:
-		print(i)
-
-
-print(content["variate_contents"][0]["html"])
-
-
-"""
-for camp in camp_ids:
-	urls = test.get_campaign_click_report(camp)["urls_clicked"]
-	for url in urls:
-		print(url["url"] + "  :  " + str(url["total_clicks"]))
-"""
 
 
 
