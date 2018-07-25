@@ -1,0 +1,16 @@
+body {
+font-family: 'Spinnaker', sans-serif;
+  font-size: 14pt;
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+h2 {
+  font-size: 18pt;
+}
+
+#description {
+  font-style: italic;
+}
