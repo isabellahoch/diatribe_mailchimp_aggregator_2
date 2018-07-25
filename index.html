@@ -10,7 +10,8 @@
 </head>
 <body>
 <nav>
-  <h1>diaTribe MailChimp Aggregator</h1>
+  <h1 id="pageTitle">diaTribe MailChimp Aggregator</h1>
+  <h2 id="description">Aggregating MailChimp email statistics using Flask & MongoDB</h2>
   <ul>
     {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>
