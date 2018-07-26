@@ -2797,3 +2797,7 @@ ul.the-icons {
 	font-size:24pt;
 	color: #fff;
 }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
