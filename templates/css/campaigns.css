@@ -1,0 +1,983 @@
+/* === fontawesome === */
+
+@import url('font-awesome.css');
+/* Table of content */
+
+/*===================================
+1. General
+2. layout
+3. Responsive media
+4. Header
+5. Section: Featured
+6. Sliders
+7. Intro
+8. Section: Content
+9. Section: Bottom
+10. Inner - Section: page headline
+11. Forms
+12. Portfolio
+13. Elements
+14. Blog & article
+15. Aside, sidebar
+16. Footer
+17. Divider, Line & Misc
+18. Position & alignment
+19. More icon from custom font icon
+20. Spacer, margin
+21. Media queries
+==================================== */
+
+/* ===================================
+1. General
+==================================== */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #656565;
+}
+
+a {
+  color: #4b5056;
+}
+
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+h2.heading {
+  font-size: 32px;
+  color: #0e161d;
+  letter-spacing: -2px;
+}
+
+h2.errortitle {
+  font-size: 64px;
+  color: #0e161d;
+  letter-spacing: -2px;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.et-wrapper {
+  width: 200px;
+  height: 200px;
+}
+
+.et-page:nth-child(1) {
+  background: red;
+}
+
+.et-page:nth-child(2) {
+  background: blue;
+}
+
+.et-page:nth-child(3) {
+  background: purple;
+}
+
+h4.title {
+  letter-spacing: -1.5px;
+}
+
+/* ===================================
+2. layout
+==================================== */
+
+.container {
+  padding: 0 20px 0 20px;
+  position: relative;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper.boxed {
+  width: 1230px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  background: #fff;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+.row .row {
+  margin-bottom: 30px;
+}
+
+.row.nomargin {
+  margin-bottom: 0;
+}
+
+/* ===================================
+3. Responsive media
+==================================== */
+
+.video-container, .map-container, .embed-container {
+  position: relative;
+  margin: 0 0 15px 0;
+  padding-bottom: 51%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed, .video-container iframe, .map-container iframe, .map-container object, .map-container embed, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  border: none;
+}
+
+img.img-polaroid {
+  margin: 0 0 20px 0;
+}
+
+.img-box {
+  max-width: 100%;
+}
+
+/* ===================================
+4. Header
+==================================== */
+
+/* --- header -- */
+
+header {
+  background: #fff;
+  margin: 0;
+  padding: 0 0 20px;
+  position: relative;
+  z-index: 2000;
+  -webkit-box-shadow: 0 2px 4px -2px #ddd;
+  -moz-box-shadow: 0 2px 4px -2px #ddd;
+  box-shadow: 0 2px 4px -2px #ddd;
+}
+
+header .top {
+  padding: 10px 0 10px;
+  margin: 0 0 30px;
+  background: #545454;
+}
+
+header .top p.topcontact {
+  color: #ddd;
+  font-size: 12px;
+}
+
+header .top p.topcontact i {
+  color: #ddd;
+}
+
+header .logo {
+  float: left;
+}
+
+header .logo img {
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+header .logo h1 {
+  color: #333;
+  letter-spacing: -1px;
+  font-size: 2.2em;
+  font-weight: 900;
+  margin: 0;
+}
+
+header .logo h1 a {
+  color: #333;
+}
+
+header .logo h1 a:hover {
+  text-decoration: none;
+}
+
+/* --- top area --- */
+
+header .top .row {
+  margin-bottom: 0;
+}
+
+ul.topmenu {
+  list-style: none;
+  margin: 0;
+}
+
+ul.topmenu li {
+  display: inline;
+}
+
+ul.topmenu li a {
+  font-size: 12px;
+  color: #ddd;
+  font-weight: 600;
+}
+
+ul.topmenu li a:hover {
+  text-decoration: none;
+}
+
+ul.social-network {
+  float: right;
+  list-style: none;
+  margin: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+ul.social-network li a:hover {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+/* --- menu --- */
+
+header {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+header .navigation {
+  display: inline-block;
+/*   float: right; */
+}
+
+.pull-right {
+  float:right
+}
+
+header ul.nav li {
+  border: none;
+  margin: 0;
+}
+
+header ul.nav li a {
+  border: none;
+  font-weight: 400;
+}
+
+.navbar .nav>li>a {
+  font-size: 13px;
+  color: #444;
+  text-shadow: none;
+}
+
+header ul.nav li a i {
+  color: #656565;
+}
+
+header ul.nav li a:hover i {
+  color: #fff;
+}
+
+header ul.nav li.active a i {
+  color: #fff;
+}
+
+header ul.nav li ul.dropdown-menu li a i {
+  color: #fff;
+}
+
+.navbar .nav a:hover {
+  background: none;
+}
+
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover {
+  font-weight: 600;
+}
+
+.navbar .nav>.active>a:active, .navbar .nav>.active>a:focus {
+  background: none;
+  outline: 0;
+  font-weight: 600;
+}
+
+.navbar .nav li .dropdown-menu {
+  z-index: 1000;
+}
+
+header ul.nav li ul {
+  z-index: 1000;
+  margin-top: 20px;
+}
+
+header ul.nav li ul li ul {
+  margin: 1px 0 0 1px;
+}
+
+.dropdown-menu .dropdown i {
+  position: absolute;
+  right: 0;
+  margin-top: 3px;
+  padding-left: 20px;
+}
+
+.navbar .nav>li>.dropdown-menu:before {
+  display: inline-block;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-bottom-color: none;
+  content: none;
+}
+
+.navbar .nav>li>.dropdown-menu:after {
+  display: inline-block;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  content: '';
+}
+
+ul.nav li.dropdown a {
+  z-index: 1000;
+  display: block;
+}
+
+ul.nav li.dropdown ul li ul.dropdown-menu {
+  margin-left: 0px;
+}
+
+ul.nav li.dropdown ul li i {
+  margin-right: 20px;
+}
+
+select.selectmenu {
+  display: none;
+}
+
+/* ===================================
+5. Section: Featured
+==================================== */
+
+#featured {
+  background: #fcfcfc;
+}
+
+#featured .row {
+  margin-bottom: 0;
+}
+
+/* Landing page */
+
+.landing {
+  padding: 50px 0;
+}
+
+/* ===================================
+6. Sliders
+==================================== */
+
+/* camera slider */
+
+#slideshow-wrapper {
+  width: 100%;
+  background: #fcfcfc;
+  float: left;
+}
+
+#camera-slide {
+  height: 425px !important;
+}
+
+.camera_caption p {
+  margin-bottom: 20px;
+}
+
+.camera_prev {
+  left: 0;
+  top: 50%;
+}
+
+.camera_next {
+  right: 0;
+  top: 50%;
+}
+
+.camera_prev>span:before {
+  content: "\f104";
+  font-family: 'FontAwesome';
+  color: #fff;
+  padding: 20px 20px 20px 10px;
+  font-size: 32px;
+  display: block;
+}
+
+.camera_next>span:before {
+  content: "\f105";
+  font-family: 'FontAwesome';
+  color: #fff;
+  padding: 20px 20px 20px 20px;
+  font-size: 32px;
+  display: block;
+}
+
+/* --- layerslider --- */
+
+#layerslider-container {
+  width: 100%;
+  min-width: 300px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+#layerslider-container-fw {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.ls-highlighted-h.color {
+  padding: 4px 8px;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* --- flexslider --- */
+
+#main-slider.flexslider {
+  margin-bottom: 40px;
+  background: #fff;
+  border: none;
+  position: relative;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  zoom: 1;
+}
+
+.flexslider {
+  background: #fff;
+  border: none;
+  position: relative;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  zoom: 1;
+}
+
+/* ===================================
+7. Section: Content
+==================================== */
+
+#content {
+  position: relative;
+  background: #fff;
+  border-top: 1px solid #f2f2f2;
+  padding: 50px 0 0 0;
+}
+
+#content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Call to action --- */
+
+.cta-box {
+  background: #fcfcfc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.cta-text {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.cta-text h2 {
+  font-weight: 900;
+  line-height: 1.1em;
+}
+
+.cta-btn {
+  float: right;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.cta-box .cta-btn a.btn {
+  padding: 15px 20px;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.cta-box .cta-btn a.btn i {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.cta-box .cta-btn a.btn:hover {
+  color: #fff;
+}
+
+.cta-text h3 {
+  font-size: 32px;
+  letter-spacing: -2px;
+}
+
+/* --- box --- */
+
+.box {
+  width: 100%;
+}
+
+.box .text h4 {
+  letter-spacing: -1.5px;
+}
+
+.box:hover .text h4 {}
+
+.box .icon {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.box .text {
+  margin-left: 100px;
+}
+
+.box a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.box a i {
+  color: #4b5056;
+}
+
+/* ---- features ---- */
+
+.features {
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0 0 0;
+}
+
+.features .feat {
+  width: 50%;
+  float: left;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.features i {
+  float: left;
+  margin-right: 20px;
+}
+
+.features h5 {
+  font-weight: 600;
+}
+
+/* ===================================
+9. Section: works
+===================================== */
+
+/* 
+
+.cs-style-4 figcaption {
+  height: 100%;
+  width: 50%;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotateY(-90deg);
+  -moz-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-4 figure:hover figcaption, .cs-style-4 figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-4 figcaption a {
+  margin-bottom: 10px;
+}
+
+/* Caption Style 6 */
+
+/* ===================================
+9. Section: Bottom
+==================================== */
+
+#bottom {
+  background: #fff;
+  padding: 50px 0 0;
+}
+
+/* ===================================
+10. Inner - Section: page headline
+==================================== */
+
+#inner-headline {
+  background: #fcfcfc;
+  position: relative;
+  margin: 0;
+  padding: 20px 0 10px;
+}
+
+#inner-headline .inner-heading h2 {
+  color: #333;
+  margin: 0 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+
+/* --- search form --- */
+
+.search {
+  float: right;
+  margin: 35px 0 0;
+  padding-bottom: 0;
+}
+
+#inner-headline form.input-append {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ===============================
+13. Elements
+================================ */
+
+/* --- blockquote --- */
+
+blockquote {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 0;
+  color: #a2a2a2;
+  line-height: 1.6em;
+  border: none;
+}
+/* --- list style --- */
+
+ul.general {
+  list-style: none;
+  margin-left: 0;
+}
+
+ul.link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.link-list li {
+  margin: 0;
+  padding: 2px 0 2px 0;
+  list-style: none;
+}
+
+footer ul.link-list li a {
+  color: #ddd;
+  font-weight: 300;
+}
+
+/* --- Heading style --- */
+
+h4.heading {
+  font-weight: 300;
+}
+
+h4.heading strong {
+  font-weight: 700;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.heading {
+  position: relative;
+}
+
+aside .widgetheading {
+  position: relative;
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+14. Blog & article
+================================ */
+
+article {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 10px;
+}
+
+article.single {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+article.noborder {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+article .post-heading h3 {
+  margin-bottom: 20px;
+}
+
+article .post-heading h3 a {
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  text-decoration: none;
+}
+
+article .post-heading h3 a:hover {
+  text-decoration: none;
+  color: #353535;
+}
+
+article a.btn.btn-theme i {
+  color: #fff;
+  margin-left: 10px;
+}
+
+/* --- post meta --- */
+
+.post-meta {
+  background: #fcfcfc;
+  border: 1px solid #e6e6e6;
+  border-top: none;
+  text-align: center;
+}
+
+.post-meta .format {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0 10px;
+}
+
+.post-meta .date {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0 10px;
+}
+
+.post-meta .date span {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* --- post format --- */
+
+.meta-post {
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.meta-post a:hover {
+  text-decoration: none;
+}
+
+.meta-post ul {
+  list-style: none;
+  margin: 0;
+}
+
+.meta-post ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.meta-post ul li {
+  font-size: 12px;
+}
+
+/* --- pagination --- */
+
+#pagination a, #pagination span {
+  display: block;
+  float: left;
+  margin: 0 7px 0 0;
+  padding: 7px 10px 6px 10px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #888;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#pagination a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+#pagination span.current {
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+}
+
+/*sidebar!*/
+
+.sidebar-nav {
+  float: left;
+  width: 100%;
+}
+
+.right-sidebar {
+  border-left: 1px solid #e9e9e9;
+  padding: 0 0 0 30px;
+}
+
+.left-sidebar {
+  border-right: 1px solid #e9e9e9;
+  padding: 0 30px 0 0;
+  display: block;
+}
+
+.left-sidebar .widget h3, .left-sidebar .widget .widget-content {
+  padding-right: 20px;
+}
+
+.widget ul.recent li {
+  margin-bottom: 20px;
+}
+
+.widget ul.tags {
+  list-style: none; margin: 0;
+}
+
+.widget ul.tags li {
+  margin: 0 5px 15px 0; display: inline-block;
+}
+
+.widget ul.tags li a {
+  text-decoration: none;
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.widget ul.tags li a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* scroll to top */
+.scrollup {
+  position: fixed;
+  width: 32px; height: 32px;
+  bottom: 20px;
+  right: 20px;
+}
+
+a.scrollup {
+  outline: 0;
+  text-decoration: none;
+}
+
+a.scrollup:hover, a.scrollup:active, a.scrollup:focus {
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* =============================
+18. Position & alignment
+============================= */
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+.floatright {
+  float: right;
+}
+
+.floatleft {
+  float: left;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+/* =============================
+21. Media queries
+============================= */
+
+@media (max-width: 480px){
+  header .logo img { margin-bottom: 10px;}
+  ul.topmenu {text-align: center;}
+}
