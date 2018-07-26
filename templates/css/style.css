@@ -27,3 +27,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 #navigationBar li{
   display: inline;
 }
+
+#logo-div {
+  padding: 15px;
+}
