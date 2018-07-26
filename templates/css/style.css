@@ -14,3 +14,10 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
     display: block;
 }
+
+#navigationBar ul{
+  list-style: none;
+}
+#navigationBar li{
+  display: inline;
+}
