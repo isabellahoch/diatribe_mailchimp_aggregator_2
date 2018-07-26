@@ -18,6 +18,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 #navigationBar ul{
   list-style: none;
 }
+#navigationBar-ul {
+  list-style:none;
+}
+#navigationBar-ul li {
+  display: inline;
+}
 #navigationBar li{
   display: inline;
 }
