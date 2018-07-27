@@ -20,6 +20,10 @@ text-decoration: none;
     color: #4eb7c0
 }
 
+ #active-navigation-link {
+	color: #4eb7c0
+}
+
 /* button:hover {
     color: #4eb7c0
 } */
