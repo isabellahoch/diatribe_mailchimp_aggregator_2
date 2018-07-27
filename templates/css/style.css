@@ -41,7 +41,7 @@ text-decoration: none;
 }
 
 .date-amount {
-	width: 120px;
+	width: 100px;
 }
 
 /* 
@@ -74,4 +74,7 @@ text-decoration: none;
 
 .navbar-styling {
   font-family: 'Roboto', sans-serif;
+}
+#date-go {
+	width:75px;
 }
