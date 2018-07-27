@@ -28,6 +28,10 @@ text-decoration: none;
     background-color: #4eb7c0
 }
 
+#home-link, #campaigns-link, #members-link, #help-link {
+	color: #000;
+}
+
 /* 
 #navigationBar ul{
   list-style: none;
