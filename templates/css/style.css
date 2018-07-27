@@ -20,12 +20,12 @@ text-decoration: none;
     color: #4eb7c0
 }
 
-button:hover {
+/* button:hover {
     color: #4eb7c0
-}
+} */
 
 #login-btn {
-    color: #4eb7c0
+    background-color: #4eb7c0
 }
 
 /* 
