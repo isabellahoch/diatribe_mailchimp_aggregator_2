@@ -59,3 +59,7 @@ text-decoration: none;
 #logo-pic {
 	height:30px;
 }
+
+.navbar-styling {
+  font-family: 'Roboto', sans-serif;
+}
