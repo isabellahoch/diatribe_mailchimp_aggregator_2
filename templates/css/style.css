@@ -24,6 +24,10 @@ text-decoration: none;
 	color: #4eb7c0
 }
 
+#date-divider {
+	font-size:30pt;
+}
+
 /* button:hover {
     color: #4eb7c0
 } */
