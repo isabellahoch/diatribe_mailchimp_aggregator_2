@@ -36,6 +36,10 @@ text-decoration: none;
 	color: #000;
 }
 
+.date-amount {
+	width: 120px;
+}
+
 /* 
 #navigationBar ul{
   list-style: none;
