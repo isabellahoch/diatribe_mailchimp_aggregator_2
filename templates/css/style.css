@@ -44,6 +44,20 @@ text-decoration: none;
 	width: 100px;
 }
 
+.button {
+    background-color: #4eb7c0;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button3 {border-radius: 8px;}
+
 /* 
 #navigationBar ul{
   list-style: none;
