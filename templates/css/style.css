@@ -15,7 +15,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
     display: block;
 }
 
-a:hover{
+a:hover, h3 a:hover{
 text-decoration: none;
     color: #4eb7c0
 }
