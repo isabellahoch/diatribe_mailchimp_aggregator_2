@@ -19,6 +19,15 @@ a:hover{
 text-decoration: none;
     color: #4eb7c0
 }
+
+button:hover {
+    color: #4eb7c0
+}
+
+#login-btn {
+    color: #4eb7c0
+}
+
 /* 
 #navigationBar ul{
   list-style: none;
