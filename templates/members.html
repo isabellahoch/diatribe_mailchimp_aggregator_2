@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+<title>diaTribe MailChimp Aggregator | Members</title>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto|Spinnaker|Chango|Dancing+Script|Lato|Lemonada|Limelight|Overlock+SC|Petit+Formal+Script|Righteous|Roboto+Condensed|Seaweed+Script|Spinnaker|Zilla+Slab+Highlight" rel="stylesheet">
+<link rel="shortcut icon" href="https://diatribe.org/sites/all/themes/diatribe/favicon.ico">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="diaTribe MailChimp Members" />
+  <meta name="author" content="Isabella!" />
+
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="css/campaigns.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+  <div id="wrapper">
+	  <header>
+		  <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top" role="navigation">
+    <div class="container">
+<a class="navbar-brand" href="#">><img src="img/logo.png" id="logo-pic" style="height:30px" alt=""></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+            &#9776;
+        </button>
+        <div class="collapse navbar-collapse" id="exCollapsingNavbar">
+            <ul class="nav navbar-nav">
+                <li class="nav-item navbar-styling"><a href="index.html" class="nav-link" id="home-link">Home</a></li>
+                <li class="nav-item navbar-styling"><a href="#" id="campaigns-link">Campaigns</a></li>
+                <li class="nav-item navbar-styling active"><a href="members.html" class="nav-link active" id="members-link">Members</a></li>
+                <li class="nav-item navbar-styling"><a href="help.html" class="nav-link" id="help-link">Help</a></li>
+            </ul>
+            <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+<!--                 <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li> -->
+                <li class="dropdown order-1">
+                    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle"><i class="icon-signin"></i> Login <span class="caret"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right mt-2">
+                       <li class="px-3 py-2">
+                           <form class="form" role="form">
+                                <div class="form-group">
+                                    <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="">
+                                </div>
+                                <div class="form-group">
+                                    <input id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="text" required="">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block" id="login-btn">Login</button>
+                                </div>
+                                <div class="form-group text-center">
+                                    <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Forgot password</h3>
+                <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <p>Reset your password..</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+	  </header>
+    </body>
+    </html>
