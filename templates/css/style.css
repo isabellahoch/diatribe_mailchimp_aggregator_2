@@ -19,7 +19,7 @@ a:hover{
 text-decoration: none;
     color: #4eb7c0
 }
-
+/* 
 #navigationBar ul{
   list-style: none;
 }
@@ -31,8 +31,14 @@ text-decoration: none;
 }
 #navigationBar li{
   display: inline;
-}
+} */
 
 #logo-div {
   padding: 15px;
 }
+
+.logo_img {}
+
+#logo-div-2 {}
+
+.navbar-brand-2 {}
