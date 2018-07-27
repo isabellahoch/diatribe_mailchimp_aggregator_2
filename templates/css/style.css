@@ -28,9 +28,9 @@ text-decoration: none;
 	font-size:15pt;
 }
 
-/* button:hover {
-    color: #4eb7c0
-} */
+.icon-exchange {
+ transform: rotate(90deg);
+}
 
 #login-btn {
     background-color: #4eb7c0
